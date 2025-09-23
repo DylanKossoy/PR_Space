@@ -8,7 +8,7 @@ const screen_HEIGHT = window.innerHeight - 1;
 
 export function createStars() {
 
-    let container = document.querySelector('.main-container')
+    let container = document.querySelector('.main-star-container')
     container.textContent = ''
 
 
