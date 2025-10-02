@@ -5,7 +5,7 @@ body {
 
 .main-container {
     height: 100vh;
-    background: black;
+    background: var(--color-main-container);
     display: flex;
     flex-direction: column;
     /* overflow:hidden; */
@@ -16,7 +16,7 @@ body {
     width: 100%; 
     height: 100%;
     position: relative;
-    background: black;
+    /* background: black; */
 }
 
 .header-container {
@@ -29,7 +29,7 @@ body {
 }
 
 .buttons-container {
-    width: 600px;
+    width: 480px;
     height: 60px;
     display: flex;
     align-items: center;
@@ -37,13 +37,66 @@ body {
 }
 
 .control-button {
-    width: 100px;
+    width: 80px;
     height: 60px;
-    background: rgba(255, 255, 255, 0.391);
+    background: var(--color-control-button);
     border: none;
     border-right: 1px solid black;
     outline: none;
     margin: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.control-button:hover {
+    background: var(--colorH-control-button);
+}
+
+.icon {
+    width: 45px;
+    position: absolute;
+    
+}
+
+
+.life-container {
+    width: 500px;
+    height: 50px;
+ 
+    margin-right: 2rem;
+    display: flex;
+   
+}
+
+.progress-bar-container {
+    width: 450px;
+    height: 50px;
+  
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+    overflow: hidden;
+}
+
+.progress-name {
+    font-size: 30px;
+
+    margin-inline: 1rem;
+   
+    color: var(--color-progress-name);
+}
+
+.progress-cell {
+    min-width: 15px;
+    height: 50px;
+    background: var(--color-progress-cell);
+    margin-inline: 1px;
+    clip-path: polygon(0% 10px, 10px 0%, 100% 0%, 100% 100%, 0% 100% );
+
 }
 
 .star {
@@ -54,5 +107,15 @@ body {
     box-shadow: 0 0 70px 10px white;
     position: absolute;
   
-
 }
+
+
+
+
+
+/* animations */
+
+
+
+
+
