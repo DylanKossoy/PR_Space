@@ -25,12 +25,43 @@ html, body {
   
 }
 
+.node-cell {
+    
+    background: rgba(126, 158, 155, 0.585);
+    border: 1px solid rgb(211, 233, 231);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    box-shadow: 0 0 10px 2px white;
+    cursor: pointer;
+}
+
+.node-cell:hover {
+    background: rgba(214, 227, 214, 0.255);
+}
+
+.node-cell-name {
+    font-size: 20px;
+    color: white;
+}
+
 .levels-container {
     
     height: calc(100vh - 50px);
     
     position: relative;
+    
+}
 
+.nodes-container {
+    
+    height: calc(100vh - 50px);
+    
+    position: relative;
+    
+    
 }
 
 .full-view-level-cell {
@@ -85,7 +116,7 @@ html, body {
 .header-container {
     height: 60px;
     background: rgba(100, 100, 100, 0.529);
-    
+    box-shadow: 0 0 15px 5px rgb(132, 132, 132);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -137,10 +168,10 @@ html, body {
     width: 500px;
     height: 50px;
     
-    margin-right: 2rem;
+   
     display: flex;
-    border-bottom: 3px solid cyan;
-    border-right: 3px solid cyan;
+    border-bottom: 3px solid rgb(9, 202, 160);
+    border-right: 3px solid rgb(9, 202, 160);
     position: relative;
     
 }
@@ -156,7 +187,7 @@ html, body {
     height: 3px;
     top: 0;
     right: 0;
-    background: cyan;
+    background: rgb(9, 202, 160);
 }
 
 .progress-bar-container {
@@ -166,7 +197,7 @@ html, body {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-   
+    
     overflow: hidden;
 }
 
@@ -189,7 +220,7 @@ html, body {
 
 /* for progress cell being on */
 .on {
-    background: cyan;
+    background: rgb(9, 202, 160);
 }
 
 .star {

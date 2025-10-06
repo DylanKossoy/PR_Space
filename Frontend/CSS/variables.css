@@ -6,7 +6,7 @@
 
     /* colors */
     --color-progress-cell: rgb(139, 139, 139);
-    --color-progress-name: cyan;
+    --color-progress-name: rgba(169, 233, 233, 0.654);
     --color-control-button: rgba(0, 0, 0, 0.185);
     --color-main-container: black;
 
