@@ -1,4 +1,17 @@
 import { createStars } from "./createStars.js";
+import { buildLevels } from './createLevels.js';
 
 
-createStars()
+
+init();
+
+
+function init() {
+    
+    buildLevels();
+    createStars()
+
+  
+   
+    
+}

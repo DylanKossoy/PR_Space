@@ -1,6 +1,6 @@
 
 
-const starCount = 300;
+const starCount = 50;
 
 const screen_WIDTH = window.innerWidth - 1;
 const screen_HEIGHT = window.innerHeight - 1;
@@ -15,6 +15,7 @@ export function createStars() {
 
 
     for(let i = 0; i < starCount; i++) {
+        let randomAnimation = Math.floor(Math.random() * 16) + 1
         let star = document.createElement('div');
         star.className = 'star'
     
@@ -25,8 +26,10 @@ export function createStars() {
         
         star.style.width = `${size}px`;
         star.style.height = `${size}px`;
-        star.style.right = `${x}px`
-        star.style.bottom = `${y}px`
+        star.style.left = `${x}px`
+        star.style.top = `-${y}px`
+
+        star.classList.add(`starmove${randomAnimation}`)
         container.appendChild(star)
 
     }
