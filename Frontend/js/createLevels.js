@@ -1,6 +1,9 @@
 import { getLevels } from "./fetchLevels.js";
 
-export async function buildLevels() {
+
+
+buildLevels();
+async function buildLevels() {
   let levels = await getLevels();
  
 
@@ -28,7 +31,7 @@ function levelCreate(level) {
   if (level.active === 'true') {
     cell.classList.add("valid");
     img.src = '../assets/icons/lock-open-alt.png'
-    lev.style.color = 'rgb(128, 244, 142)'
+    lev.style.color = 'rgba(170, 255, 180, 1)'
     cell.append(img)
   } else if(level.active == 'false') {
     cell.classList.add("invalid");

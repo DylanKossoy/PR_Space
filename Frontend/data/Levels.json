@@ -130,11 +130,276 @@
     {
         "level" : "17",
         "active" : "false",
+        "x" : "700",
+        "y" : "120",
+        "problem" : "blank",
+        "answer" : "solution"
+    },
+    {
+        "level" : "18",
+        "active" : "false",
+        "x" : "570",
+        "y" : "220",
+        "problem" : "blank",
+        "answer" : "solution"
+    },
+    {
+        "level" : "19",
+        "active" : "false",
+        "x" : "720",
+        "y" : "300",
+        "problem" : "blank",
+        "answer" : "solution"
+    },
+    {
+        "level" : "20",
+        "active" : "false",
+        "x" : "600",
+        "y" : "370",
+        "problem" : "blank",
+        "answer" : "solution"
+    },
+    {
+        "level" : "21",
+        "active" : "false",
+        "x" : "690",
+        "y" : "470",
+        "problem" : "blank",
+        "answer" : "solution"
+    },
+    {
+        "level" : "22",
+        "active" : "false",
         "x" : "550",
+        "y" : "550",
+        "problem" : "blank",
+        "answer" : "solution"
+    },
+    {
+        "level" : "23",
+        "active" : "false",
+        "x" : "600",
+        "y" : "720",
+        "problem" : "blank",
+        "answer" : "solution"
+    },
+    {
+        "level" : "24",
+        "active" : "false",
+        "x" : "750",
+        "y" : "810",
+        "problem" : "blank",
+        "answer" : "solution"
+    },
+    {
+        "level" : "25",
+        "active" : "false",
+        "x" : "750",
+        "y" : "640",
+        "problem" : "blank",
+        "answer" : "solution"
+    },
+    {
+        "level" : "26",
+        "active" : "false",
+        "x" : "900",
+        "y" : "720",
+        "problem" : "blank",
+        "answer" : "solution"
+    },
+    {
+        "level" : "27",
+        "active" : "false",
+        "x" : "900",
+        "y" : "500",
+        "problem" : "blank",
+        "answer" : "solution"
+    },
+    {
+        "level" : "28",
+        "active" : "false",
+        "x" : "900",
+        "y" : "300",
+        "problem" : "blank",
+        "answer" : "solution"
+    },
+    {
+        "level" : "29",
+        "active" : "false",
+        "x" : "880",
+        "y" : "100",
+        "problem" : "blank",
+        "answer" : "solution"
+    },
+    {
+        "level" : "30",
+        "active" : "false",
+        "x" : "1050",
         "y" : "200",
         "problem" : "blank",
         "answer" : "solution"
+    },
+    {
+        "level" : "31",
+        "active" : "false",
+        "x" : "1000",
+        "y" : "400",
+        "problem" : "blank",
+        "answer" : "solution"
+    },
+    {
+        "level" : "32",
+        "active" : "false",
+        "x" : "1070",
+        "y" : "500",
+        "problem" : "blank",
+        "answer" : "solution"
+    },
+    {
+        "level" : "33",
+        "active" : "false",
+        "x" : "1000",
+        "y" : "620",
+        "problem" : "blank",
+        "answer" : "solution"
+    },
+    {
+        "level" : "34",
+        "active" : "false",
+        "x" : "1050",
+        "y" : "800",
+        "problem" : "blank",
+        "answer" : "solution"
+    },
+    {
+        "level" : "35",
+        "active" : "false",
+        "x" : "1150",
+        "y" : "700",
+        "problem" : "blank",
+        "answer" : "solution"
+    },
+    {
+        "level" : "36",
+        "active" : "false",
+        "x" : "1220",
+        "y" : "550",
+        "problem" : "blank",
+        "answer" : "solution"
+    },
+    {
+        "level" : "37",
+        "active" : "false",
+        "x" : "1200",
+        "y" : "350",
+        "problem" : "blank",
+        "answer" : "solution"
+    },
+    {
+        "level" : "38",
+        "active" : "false",
+        "x" : "1220",
+        "y" : "200",
+        "problem" : "blank",
+        "answer" : "solution"
+    },
+    {
+        "level" : "39",
+        "active" : "false",
+        "x" : "1100",
+        "y" : "50",
+        "problem" : "blank",
+        "answer" : "solution"
+    },
+    {
+        "level" : "40",
+        "active" : "false",
+        "x" : "1300",
+        "y" : "50",
+        "problem" : "blank",
+        "answer" : "solution"
+    },
+    {
+        "level" : "41",
+        "active" : "false",
+        "x" : "1400",
+        "y" : "200",
+        "problem" : "blank",
+        "answer" : "solution"
+    },
+    {
+        "level" : "42",
+        "active" : "false",
+        "x" : "1550",
+        "y" : "70",
+        "problem" : "blank",
+        "answer" : "solution"
+    },
+    {
+        "level" : "43",
+        "active" : "false",
+        "x" : "1580",
+        "y" : "300",
+        "problem" : "blank",
+        "answer" : "solution"
+    },
+    {
+        "level" : "44",
+        "active" : "false",
+        "x" : "1400",
+        "y" : "420",
+        "problem" : "blank",
+        "answer" : "solution"
+    },
+    {
+        "level" : "45",
+        "active" : "false",
+        "x" : "1600",
+        "y" : "550",
+        "problem" : "blank",
+        "answer" : "solution"
+    },
+    {
+        "level" : "46",
+        "active" : "false",
+        "x" : "1450",
+        "y" : "600",
+        "problem" : "blank",
+        "answer" : "solution"
+    },
+    {
+        "level" : "47",
+        "active" : "false",
+        "x" : "1350",
+        "y" : "700",
+        "problem" : "blank",
+        "answer" : "solution"
+    },
+    {
+        "level" : "48",
+        "active" : "false",
+        "x" : "1250",
+        "y" : "800",
+        "problem" : "blank",
+        "answer" : "solution"
+    },
+    {
+        "level" : "49",
+        "active" : "false",
+        "x" : "1450",
+        "y" : "830",
+        "problem" : "blank",
+        "answer" : "solution"
+    },
+    {
+        "level" : "50",
+        "active" : "false",
+        "x" : "1600",
+        "y" : "730",
+        "problem" : "blank",
+        "answer" : "solution"
     }
+    
     
     
 ]

@@ -1,6 +1,7 @@
 html, body {
     margin: 0;
     overflow: hidden;
+    font-family: 'SUSE Mono';
 }
 
 
@@ -29,8 +30,6 @@ html, body {
     height: calc(100vh - 50px);
     
     position: relative;
-    
-  
 
 }
 
@@ -40,17 +39,18 @@ html, body {
     border-radius: 50%;
     position: absolute;
     display: flex;
+    gap: 3px;
     justify-content: center;
     align-items: center;
-   
+    
     z-index: 1;
     cursor: pointer;
-   
+    
 }
 
 .level-number {
     
-   font-size: 17px;
+    font-size: 15px;
 }
 
 .level-icon {
@@ -59,23 +59,33 @@ html, body {
 }
 
 
-.full-view-level-cell:hover {
-    background: rgba(255, 255, 255, 0.2);
+
+
+.valid:hover {
+    background: rgba(100, 100, 100, 0.333);
+    box-shadow: 0 0 20px 5px rgb(142, 255, 142);
+}
+
+.invalid:hover {
+    background: rgba(233, 99, 99, 0.216);
+    box-shadow: 0 0 20px 5px red;
 }
 
 .valid {
-    border: 3px solid rgb(78, 255, 78);
-
+    border: 3px solid rgb(135, 192, 135);
+    box-shadow: 0 0 5px 3px green;
+    
 }
 
 .invalid {
-    border: 3px solid red;
+    border: 3px solid rgb(247, 89, 89);
+    box-shadow: 0 0 5px 3px rgb(205, 75, 75);
 }
 
 .header-container {
     height: 60px;
-    background: rgba(125, 125, 125, 0.529);
-  
+    background: rgba(100, 100, 100, 0.529);
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -86,7 +96,7 @@ html, body {
     height: 60px;
     display: flex;
     align-items: center;
-   
+    
     
 }
 
@@ -105,9 +115,9 @@ html, body {
     transition: none;
     z-index: 1;
     
-   
-
-
+    
+    
+    
 }
 
 .control-button:hover {
@@ -116,9 +126,9 @@ html, body {
 }
 
 .icon {
-    width: 45px;
+    width: 35px;
     position: absolute;
-   
+    
     
 }
 
@@ -126,10 +136,27 @@ html, body {
 .life-container {
     width: 500px;
     height: 50px;
- 
+    
     margin-right: 2rem;
     display: flex;
-   
+    border-bottom: 3px solid cyan;
+    border-right: 3px solid cyan;
+    position: relative;
+    
+}
+
+.selected {
+    background: var(--colorH-control-button);
+}
+
+.life-container::after {
+    content: '';
+    position: absolute;
+    width: 250px;
+    height: 3px;
+    top: 0;
+    right: 0;
+    background: cyan;
 }
 
 .progress-bar-container {
@@ -139,12 +166,12 @@ html, body {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    
+   
     overflow: hidden;
 }
 
 .progress-name {
-    font-size: 30px;
+    font-size: 25px;
 
     margin-inline: 1rem;
    
@@ -152,12 +179,17 @@ html, body {
 }
 
 .progress-cell {
-    min-width: 15px;
-    height: 50px;
+    min-width: 10px;
+    height: 35px;
     background: var(--color-progress-cell);
     margin-inline: 1px;
     clip-path: polygon(0% 10px, 10px 0%, 100% 0%, 100% 100%, 0% 100% );
 
+}
+
+/* for progress cell being on */
+.on {
+    background: cyan;
 }
 
 .star {
@@ -167,7 +199,7 @@ html, body {
     box-shadow: 0 0 20px 5px white;
     position: absolute;
     border-radius: 5px;
-    will-change: transform, opacity;
+   
   
     
     

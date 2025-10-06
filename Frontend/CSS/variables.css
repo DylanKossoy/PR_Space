@@ -5,12 +5,12 @@
 :root {
 
     /* colors */
-    --color-progress-cell: rgb(0, 255, 162);
-    --color-progress-name: rgb(189, 255, 189);
+    --color-progress-cell: rgb(139, 139, 139);
+    --color-progress-name: cyan;
     --color-control-button: rgba(0, 0, 0, 0.185);
     --color-main-container: black;
 
     /* hover colors */
-    --colorH-control-button: rgba(157, 225, 157, 0.457);
+    --colorH-control-button: rgba(82, 110, 82, 0.457);
     
 }
