@@ -184,5 +184,33 @@
         "size" : "70px",
         "x" : "50% - 370px",
         "y" : "50% + 370px"
+    },
+    {
+        "name" : "x16",
+        "size" : " 150px",
+        "x" : "200px",
+        "y" : "200px",
+        "class": "token"
+    },
+    {
+        "name" : "x16",
+        "size" : "150px",
+        "x" : "200px",
+        "y" : "calc(100vh - 200px)",
+        "class": "token"
+    },
+    {
+        "name" : "x16",
+        "size" : "150px",
+        "x" : "calc(100vw - 200px)",
+        "y" : "200px",
+        "class": "token"
+    },
+    {
+        "name" : "",
+        "size" : "150px",
+        "x" : "calc(100vw - 200px)",
+        "y" : "calc(100vh - 200px)",
+        "class": "token"
     }
 ]

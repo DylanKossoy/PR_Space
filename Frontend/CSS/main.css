@@ -4,7 +4,7 @@ html, body {
     font-family: 'SUSE Mono';
 }
 
-
+/* BACKGROUND AND STARS */
 .main-container {
     width: 100vw;
     height: 100vh;
@@ -20,13 +20,208 @@ html, body {
     height: 100%;
     position: relative;
     
-    
-    
-  
 }
 
-.node-cell {
+.star {
+    width: 10px;
+    height: 10px;
+    background: rgb(255, 255, 255);
+    box-shadow: 0 0 20px 5px white;
+    position: absolute;
+    border-radius: 5px;   
+}
+
+
+/* HEADER CONTAINER */
+.header-container {
+    height: 60px;
+    background: rgba(100, 100, 100, 0.529);
+    box-shadow: 0 0 15px 5px rgb(132, 132, 132);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.buttons-container {
+    width: 500px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+
     
+}
+
+.control-button {
+    width: 80px;
+    height: 60px;
+    background: var(--color-control-button);
+    border: none;
+    border-right: 1px solid black;
+    outline: none;
+    margin: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: none;
+    z-index: 1;
+    
+    
+    
+    
+}
+
+.control-button:hover {
+    background: var(--colorH-control-button);
+    
+}
+
+.icon {
+    width: 35px;
+    position: absolute;
+    
+    
+}
+
+.info-button {
+    width: 20px;
+    height: 60px;
+    background: rgba(103, 103, 103, 0.574);
+}
+
+.info-button:hover {
+    background: rgba(114, 162, 150, 0.564);
+}
+
+.life-container {
+    width: 500px;
+    height: 50px;   
+    
+    
+    display: flex;
+    border-bottom: 3px solid rgb(9, 202, 160);
+    border-right: 3px solid rgb(9, 202, 160);
+    position: relative;
+    
+}
+
+.selected {
+    background: var(--colorH-control-button);
+}
+
+.life-container::after {
+    content: '';
+    position: absolute;
+    width: 250px;
+    height: 3px;
+    top: 0;
+    right: 0;
+    background: rgb(9, 202, 160);
+}
+
+
+.progress-bar-container {
+    width: 450px;
+    height: 50px;
+  
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+    overflow: hidden;
+}
+
+.progress-name {
+    font-size: 25px;
+
+    margin-inline: 1rem;
+   
+    color: var(--color-progress-name);
+}
+
+.progress-cell {
+    min-width: 10px;
+    height: 35px;
+    background: var(--color-progress-cell);
+    margin-inline: 1px;
+    clip-path: polygon(0% 10px, 10px 0%, 100% 0%, 100% 100%, 0% 100% );
+
+}
+
+/* for progress cell being on */
+.on {
+    background: rgb(9, 202, 160);
+}
+
+
+.loot-container {
+    width: 700px;
+ 
+    display: flex;
+    padding-left: 2rem;
+   
+
+}
+
+.loot-img {
+    width: 40px;
+    margin-right: .5rem;
+}
+
+.token-amount {
+    color: rgb(255, 239, 137);
+    font-size: 20px;
+    font-family: 'Orbitron', 'ariel';
+    
+    
+}
+
+.ruby-container {
+    display: flex;
+    width: 150px;
+    
+}
+
+.ruby-amount {
+    color: rgb(255, 95, 92);
+    font-size: 20px;
+    font-family: 'Orbitron', 'ariel';
+    
+}
+
+.badge-container {
+    display: flex;
+    width: 150px;
+}
+
+.badge-amount {
+    color: rgb(233, 255, 92);
+    font-size: 20px;
+    font-family: 'Orbitron', 'ariel';
+
+}
+
+
+.gem-amount {
+    color: rgb(92, 193, 255);
+    font-size: 20px;
+    font-family: 'Orbitron', 'ariel';
+}
+
+.gem-container {
+    display: flex;
+    width: 150px;
+}
+
+.token-container {
+    display: flex;
+    width: 150px;
+   
+}
+
+
+/* NODE TAB */
+
+.node-cell {
     background: rgba(126, 158, 155, 0.585);
     border: 1px solid rgb(211, 233, 231);
     border-radius: 50%;
@@ -47,22 +242,30 @@ html, body {
     color: white;
 }
 
+.nodes-container {
+    
+    height: calc(100vh - 60px);
+    
+    position: relative;
+    
+    
+}
+
+.token {
+    background: rgb(80, 79, 79);
+}
+
+
+/* LEVELS TAB */
+
 .levels-container {
     
-    height: calc(100vh - 50px);
+    height: calc(100vh - 60px);
     
     position: relative;
     
 }
 
-.nodes-container {
-    
-    height: calc(100vh - 50px);
-    
-    position: relative;
-    
-    
-}
 
 .full-view-level-cell {
     width: 60px;
@@ -113,128 +316,21 @@ html, body {
     box-shadow: 0 0 5px 3px rgb(205, 75, 75);
 }
 
-.header-container {
-    height: 60px;
-    background: rgba(100, 100, 100, 0.529);
-    box-shadow: 0 0 15px 5px rgb(132, 132, 132);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.buttons-container {
-    width: 480px;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    
-    
-}
-
-.control-button {
-    width: 80px;
-    height: 60px;
-    background: var(--color-control-button);
-    border: none;
-    border-right: 1px solid black;
-    outline: none;
-    margin: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    transition: none;
-    z-index: 1;
-    
-    
-    
-    
-}
-
-.control-button:hover {
-    background: var(--colorH-control-button);
-    
-}
-
-.icon {
-    width: 35px;
-    position: absolute;
-    
-    
-}
 
 
-.life-container {
-    width: 500px;
-    height: 50px;
-    
-   
-    display: flex;
-    border-bottom: 3px solid rgb(9, 202, 160);
-    border-right: 3px solid rgb(9, 202, 160);
-    position: relative;
-    
-}
+ 
+/* PROFILE TAB */
 
-.selected {
-    background: var(--colorH-control-button);
-}
 
-.life-container::after {
-    content: '';
-    position: absolute;
-    width: 250px;
-    height: 3px;
-    top: 0;
-    right: 0;
-    background: rgb(9, 202, 160);
-}
-
-.progress-bar-container {
-    width: 450px;
-    height: 50px;
+.profile-container {
   
+    height: calc(100vh - 60px);
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    
-    overflow: hidden;
 }
 
-.progress-name {
-    font-size: 25px;
+ 
 
-    margin-inline: 1rem;
-   
-    color: var(--color-progress-name);
-}
 
-.progress-cell {
-    min-width: 10px;
-    height: 35px;
-    background: var(--color-progress-cell);
-    margin-inline: 1px;
-    clip-path: polygon(0% 10px, 10px 0%, 100% 0%, 100% 100%, 0% 100% );
-
-}
-
-/* for progress cell being on */
-.on {
-    background: rgb(9, 202, 160);
-}
-
-.star {
-    width: 10px;
-    height: 10px;
-    background: rgb(255, 255, 255);
-    box-shadow: 0 0 20px 5px white;
-    position: absolute;
-    border-radius: 5px;
-   
-  
-    
-    
-}
 
 .starmove1 {
     animation: star_move1 120s  ease-in-out infinite;

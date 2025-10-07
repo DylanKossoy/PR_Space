@@ -30,6 +30,10 @@ function createNode(node) {
     nodeCell.style.width = `${node.size}`
     nodeCell.style.height = `${node.size}`
 
+    if(node?.class === "token") {
+        nodeCell.classList.add('token')
+    }
+
     nodeName.textContent = `${node.name}`
     nodeCell.tabIndex = '0'
     nodeCell.appendChild(nodeName);

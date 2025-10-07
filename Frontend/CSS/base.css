@@ -104,3 +104,7 @@ textarea:not([rows]) {
   font-family: 'SUSE Mono';
   src: url(../assets/fonts/SUSEMono-VariableFont_wght.woff2) format('woff2');
 }
+@font-face {
+  font-family: 'Orbitron';
+  src: url(../assets/fonts/Orbitron-Regular.woff2) format('woff2');
+}
